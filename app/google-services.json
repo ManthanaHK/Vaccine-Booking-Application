@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "349817837217",
+    "project_id": "co-win-d1067",
+    "storage_bucket": "co-win-d1067.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349817837217:android:fedd5270e7dbd00afe42e0",
+        "android_client_info": {
+          "package_name": "com.example.vaccinationandcovidhcarecentrenotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349817837217-18kklbfbvici89febjh9v9vun8p8rimi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFdSwzi85tDKGllpsbCcJYsncUa2KbO50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349817837217-18kklbfbvici89febjh9v9vun8p8rimi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

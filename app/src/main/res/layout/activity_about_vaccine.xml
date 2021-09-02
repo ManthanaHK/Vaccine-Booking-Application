@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".AboutVaccine">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Vaccine"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300sp"
+            android:layout_marginLeft="300sp"
+            android:layout_marginBottom="630sp"
+            app:srcCompat="@drawable/vaccinationlogo" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:minLines="8"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text=" The body’s immune system helps protect against pathogens that cause infection.\n Most of the time, it’s an efficient system.\n It either keeps microorganisms out or tracks them down and gets rid of them.\n However, some pathogens can overwhelm the immune system.\n When this happens, it can cause serious illness.\n The pathogens most likely to cause problems are the ones the body doesn’t recognize.\n Vaccination is a way to “teach” the immune system how to recognize and eliminate an organism.\n That way, your body is prepared if you’re ever exposed."
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="150sp"
+            android:onClick="back"
+            android:text="Back" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

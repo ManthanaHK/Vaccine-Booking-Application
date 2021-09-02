@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".EntryDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Enter Details"
+            android:textSize="34sp"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            app:srcCompat="@drawable/enterdeatilslogo" />
+
+        <EditText
+            android:id="@+id/txtphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:layout_marginTop="30dp"
+            android:hint=" Click to enter your phone number"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="5dp"
+            ></LinearLayout>
+
+        <Switch
+            android:id="@+id/dose1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Dose 1"
+            android:layout_marginTop="20dp"
+            android:background="@color/teal_700"
+            android:textSize="20sp"/>
+
+        <Switch
+            android:id="@+id/dose2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Dose 2"
+            android:layout_marginTop="20dp"
+            android:background="@color/teal_700"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/birthdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:hint="  Click to enter your date of birth"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:inputType="date"
+            android:onClick="selectDate"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/black"></LinearLayout>
+
+        <Button
+            android:id="@+id/BOOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="DONE"
+            android:layout_gravity="center"
+            android:onClick="done"/>
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="back"
+            android:text="Back" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

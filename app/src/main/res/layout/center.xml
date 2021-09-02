@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="40dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_error"
+        >
+
+        <TextView
+            android:id="@+id/TVCenterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:drawableLeft="@drawable/ic_hospital"
+            android:drawablePadding="4dp"
+            android:padding="2dp"
+            android:textColor="@color/white"
+            android:text="ABC"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVCenterLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TVCenterName"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:drawableLeft="@drawable/ic_location"
+            android:padding="3dp"
+            android:textColor="@color/white"
+            android:text="XYZ"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVCenterTimings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TVCenterLocation"
+            android:drawableLeft="@drawable/ic_timings"
+            android:drawablePadding="4dp"
+            android:padding="3dp"
+            android:textColor="@color/white"
+            android:text="9:30 TO 6:30"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:id="@+id/idLL"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/TVCenterTimings">
+
+            <TextView
+                android:id="@+id/TVVaccineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:drawableLeft="@drawable/ic_vaccine"
+                android:drawablePadding="3dp"
+                android:text="C0-WIN"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:weightSum="1" />
+
+            <TextView
+                android:id="@+id/TVVaccineFees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@drawable/ic_cost"
+                android:text="FREE"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/idLL"
+            android:onClick="Select"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/TVAgeLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_age"
+                android:text="Above 20"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TVAvailability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_doses"
+                android:text="120 doses"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="175dp"
+                android:layout_weight="1"
+                android:onClick="select"
+                android:text="Select" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

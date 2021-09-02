@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vaccinationandcovidhcarecentrenotification">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/injection"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VaccinationAndCovidhCareCentreNotification">
+        <activity android:name=".BookingDetails"></activity>
+        <activity android:name=".EntryDetails" />
+        <activity android:name=".MsgNotiScreen" />
+
+        <receiver
+            android:name=".SMSReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".SlotSelection" />
+        <activity android:name=".Vaccinationcenterslist" />
+        <activity android:name=".Entrypincode" />
+        <activity android:name=".SuccessBooking" />
+        <activity android:name=".ContactDoctors" />
+        <activity android:name=".TabletDetailsDoxyCycline" />
+        <activity android:name=".TabetDetailsVitaminC" />
+        <activity android:name=".TabletDetailsZincSulphate" />
+        <activity android:name=".Prescription" />
+        <activity android:name=".Precautionary" />
+        <activity android:name=".HomeIsolation" />
+        <activity android:name=".CareCentre" />
+        <activity android:name=".EntryDetails" />
+        <activity android:name=".AboutVaccine" />
+        <activity android:name=".Vaccination" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
